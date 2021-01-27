@@ -1,0 +1,232 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.view {
+  width: 445px;
+  min-height: 870px;
+  max-height: 870px;
+  border: 1px solid gray;
+  overflow-x: hidden;
+  border-radius: 30px;
+  background: #f2f2f3;
+}
+.view::-webkit-scrollbar {
+  background: transparent;
+  width: 0;
+}
+
+header {
+  display: flex;
+  /* justify-content: space-between; */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  width: 100%;
+}
+.menu-toggler {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.logo {
+  width: 100%;
+  height: 40px;
+  margin-left: auto;
+  text-align: center;
+}
+.logo img {
+  max-width: 53%;
+  cursor: pointer;
+  margin-left: -44px;
+  display: inline-block;
+}
+
+.search-component {
+  margin-top: 30px;
+  width: 100%;
+  padding: 0 20px;
+}
+.search-component h2 {
+  font-weight: bold;
+  font-size: 27px;
+}
+.icon-wrap {
+  width: 30px;
+  height: 30px;
+  color: gray;
+}
+.icon-wrap.search-icon {
+  width: 20px;
+  height: 20px;
+  color: gray;
+}
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+.icon-wrap.settings-icon {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+.settings-icon {
+  position: relative;
+  right: -9px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.form-wrap {
+  /* background: red; */
+  position: relative;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  align-items: center;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.form-wrap input::placeholder {
+  color: gray;
+  font-size: 18px;
+  font-weight: 450;
+}
+.form-wrap input {
+  width: 100% !important;
+  flex: 1;
+  outline: none;
+  display: block;
+  padding: 7px;
+  padding-left: 35px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+a:hover {
+  color: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Card List- */
+
+.list-title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+.list-heading a {
+  font-size: large;
+  font-size: 600;
+}
+
+/* Food List */
+.card-list::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.card-list {
+  overflow-x: scroll;
+  width: 100%;
+  padding-bottom: 19px;
+}
+.food-card:first-child {
+  margin-left: 0;
+}
+.food-card {
+  flex-shrink: 0;
+  width: 160px;
+  margin-left: 15px;
+  position: relative;
+}
+.food-img {
+  width: 100%;
+  height: 109px;
+  overflow: hidden;
+}
+.food-img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.food-name {
+  font-weight: bold;
+  cursor: pointer;
+}
+.food-content {
+  padding: 7px;
+  padding-top: 5px;
+  background: #fff;
+}
+.food-desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: #656565;
+  line-height: 1.3;
+}
+.food-link {
+  font-size: 8px;
+  font-weight: 800;
+  background-color: #ffcc29;
+  padding: 2px 4px;
+  transition: all 0.3s ease-out;
+}
+.food-link:hover {
+  background-color: darkred;
+  color: #fff;
+}
+.food-link:nth-child(2) {
+  margin-left: 5px;
+}
+/* heart  for likes and ...*/
+.like-heart {
+  color: #860002;
+  top: 6px;
+  left: 4px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+.like-heart:hover {
+  transform: scale(1.1);
+  color: #af0104;
+}
+/* ratings */
+.rating {
+  cursor: pointer;
+  right: 8px;
+  top: 10px;
+  position: absolute;
+  background: #fff;
+  width: 54px;
+}
+.star {
+  padding: 1px 4px;
+}
+.rating-star {
+  color: orange;
+  width: 20px;
+  height: 20px;
+}
+.star-count {
+  font-weight: bold;
+}
+.edit {
+  width: 20px;
+  height: 20px;
+}
+.rating-percent {
+  color: #fff;
+  font-weight: bold;
+  background: #009a00;
+}
