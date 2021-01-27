@@ -136,7 +136,7 @@ a {
 .card-list {
   overflow-x: scroll;
   width: 100%;
-  padding-bottom: 19px;
+  padding-bottom: 7px;
 }
 .food-card:first-child {
   margin-left: 0;
@@ -229,4 +229,43 @@ a {
   color: #fff;
   font-weight: bold;
   background: #009a00;
+}
+
+/* Bottom tabs */
+.tabs-container {
+  width: 100%;
+  position: sticky;
+  /* position: -webkit-sticky; */
+  bottom: 0;
+  left: 0;
+  padding: 10px 15px;
+  background: #f2f2f3;
+  /* filter: blur(2px); */
+  z-index: 10;
+}
+.tab-icon {
+  width: 30px;
+  height: 30px;
+  opacity: 0.4;
+  color: #af0104;
+  transition: all 0.3s ease-out;
+}
+.tab-icon:hover {
+  color: #860002;
+  opacity: 1;
+}
+.tab-icon.active {
+  opacity: 0.8;
+  position: relative;
+  /* padding: 10px; */
+}
+.tab-icon.active::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgb(175, 8, 8);
+  left: -9px;
+  bottom: -10px;
 }
